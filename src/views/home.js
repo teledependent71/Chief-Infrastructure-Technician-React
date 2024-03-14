@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
+import Component2 from '../components/component2'
+import TestComponent from '../components/test-component'
 import './home.css'
 
 const Home = (props) => {
@@ -11,6 +13,12 @@ const Home = (props) => {
         <title>Chief Infrastructure Technician</title>
         <meta property="og:title" content="Chief Infrastructure Technician" />
       </Helmet>
+      <Component2></Component2>
+      <TestComponent>
+        <div className="home-container1">
+          <h1>Heading</h1>
+        </div>
+      </TestComponent>
     </div>
   )
 }
